@@ -23,7 +23,7 @@ const allowedOrigins = [
 ]
 
 const corsOptions = {
-    origin:'https://nationalcrisis.netlify.app/',
+    origin:'http://localhost:5173/',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: ['Content-Type','Authorization'],
     credentials: true,
