@@ -29,7 +29,7 @@ const corsOptions = {
     allowedHeaders: ['Content-Type','Authorization'],
     credentials: true,
 }
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 app.use('/api/user', userRoutes);
 
