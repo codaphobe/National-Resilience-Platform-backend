@@ -17,8 +17,13 @@ const app = express();
 // Middleware
 app.use(express.json());
 
+const allowedOrigins = [
+    'http://localhost:5173/',
+    'https://nationalcrisis.netlify.app/'
+]
+
 const corsOptions = {
-    origin:'http://localhost:5173/',
+    origin:allowedOrigins,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: ['Content-Type','Authorization'],
     credentials: true,
